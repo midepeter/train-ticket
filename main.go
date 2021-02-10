@@ -41,7 +41,7 @@ func main() {
 		log.Fatal("failed to setup tables", err)
 	}
 
-	r := server.StartServer(db)
+	r := server.StartServer()
 
 	r.Run(":8000")
 }
